@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.card {
+  width: 300px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  background-color: white;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  margin: auto;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(170, 117, 117);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(170, 117, 117);
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+form{
+  display: flex;
+  flex-direction: column;justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  width: 108%;
+  padding: 10px;
+  background-color: rgb(170, 117, 117);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}

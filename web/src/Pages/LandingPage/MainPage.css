@@ -1,0 +1,274 @@
+.budget-tracker {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #bccfec;
+  padding: 20px;
+  border-radius: 30px;
+
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  color: rgb(161, 62, 62);
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  gap: 30px;
+}
+
+.dateFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter input {
+  margin-top: 5px;
+  padding: 5px;
+  border: 2px solid #b19c9c;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  width: 100%;
+}
+
+.filter-button,
+.add-budget-button {
+  background-color: #ffb300;
+  /* border: none; */
+
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.add-budget-button {
+  background-color: #000;
+  padding: 15px;
+  border: 2px solid #ffb300;
+}
+
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.budget-table th,
+.budget-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.actions-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.budgetAnalysis {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+  color: #ee0303;
+
+  border: 1px solid black;
+  margin: 25px 0;
+  padding: 0 9px;
+}
+
+.budgetBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#total {
+  color: blue;
+}
+
+#totalHead {
+  border: 1px solid rgb(77, 5, 245);
+  padding: 10px;
+}
+#remain {
+  border: 1px solid rgb(240, 2, 2);
+  padding: 10px;
+}
+
+.budgetAnalysis span {
+  color: #141006;
+  padding: 5px;
+  background-color: #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: rgb(80, 80, 185);
+}
+
+.pagination span {
+  margin-right: 10px;
+  padding-bottom: 12px;
+}
+
+.pagination select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.pagination-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.actions-container {
+  position: relative;
+  display: inline-block;
+}
+
+.actions-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  right: 0;
+}
+
+.dropdown-menu button {
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f1f1f1;
+}
+.edit-form-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.edit-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form-container label {
+  margin-bottom: 10px;
+}
+
+.edit-form-container input {
+  padding: 5px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.edit-form-container button {
+  margin-top: 10px;
+
+  padding: 5px 10px;
+}
+
+.barChart {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 10px solid #bccfec;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  color: #000;
+  padding: 35px;
+  border-radius: 80px;
+}
+
+.barChart h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-self: flex-start;
+
+  /* padding: 20px; */
+  padding-left: 15px;
+  color: rgb(161, 62, 62);
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.barChart h5 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-self: flex-start;
+  padding-left: 15px;
+  color: rgb(161, 62, 62);
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.trends {
+  display: flex;
+  gap: 15px;
+  padding-left: 15px;
+}
+
+.last {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffb300;
+  color: rgb(252, 250, 250);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px;
+  font-size: large;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.last span {
+  padding: 2px;
+}
